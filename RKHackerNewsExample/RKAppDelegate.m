@@ -7,12 +7,56 @@
 //
 
 #import "RKAppDelegate.h"
+#import "RKNewsItem.h"
+#import "RKNewsItemsViewController.h"
+#import <RestKit/ObjectMapping/RKObjectMapping.h>
+#import <RestKit/Network/RKObjectManager.h>
+#import <RestKit/Support/RKMIMETypes.h>
+#import <RestKit/Network/RKResponseDescriptor.h>
+#import <AFNetworking/AFNetworking.h>
 
 @implementation RKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //let AFNetworking manage the activity indicator
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    // Initialize HTTPClient
+    NSURL *baseURL = [NSURL URLWithString:@"http://api.thriftdb.com/api.hnsearch.com/"];
+    AFHTTPClient* client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+        
+    //we want to work with JSON-Data
+    [client setDefaultHeader:@"Accept" value:RKMIMETypeJSON];
+    
+    // Initialize RestKit
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
+    
+    // Setup our object mappings
+    RKObjectMapping *newsItemMapping = [RKObjectMapping mappingForClass:[RKNewsItem class]];
+    [newsItemMapping addAttributeMappingsFromDictionary:@{
+     @"text" : @"submissionText",
+     @"create_ts" : @"creationDate",
+     @"url" : @"submissionURL",
+     @"title" : @"title",
+     @"username" : @"username",
+     @"id" : @"itemID",
+     }];
+            
+    // Register our mappings with the provider using a response descriptor
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:newsItemMapping
+                                                                                            method:RKRequestMethodGET
+                                                                                       pathPattern:@"items/_search"
+                                                                                           keyPath:@"results.item"
+                                                                                       statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    [objectManager addResponseDescriptor:responseDescriptor];
+    
+    // Create Window and View Controllers
+    RKNewsItemsViewController *viewController = [[RKNewsItemsViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = controller;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

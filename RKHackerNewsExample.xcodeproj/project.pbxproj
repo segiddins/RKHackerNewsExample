@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AD025353BB04F8FB19D0C49 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFC01F8166742ABB0F5CBD3 /* libPods.a */; };
 		C0E9E102179F0470005CCFBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E9E101179F0470005CCFBC /* UIKit.framework */; };
 		C0E9E104179F0470005CCFBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E9E103179F0470005CCFBC /* Foundation.framework */; };
 		C0E9E106179F0470005CCFBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E9E105179F0470005CCFBC /* CoreGraphics.framework */; };
@@ -16,22 +17,32 @@
 		C0E9E114179F0470005CCFBC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9E113179F0470005CCFBC /* Default.png */; };
 		C0E9E116179F0470005CCFBC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9E115179F0470005CCFBC /* Default@2x.png */; };
 		C0E9E118179F0470005CCFBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E9E117179F0470005CCFBC /* Default-568h@2x.png */; };
+		C0E9E11F179F0527005CCFBC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C0E9E11E179F0527005CCFBC /* Podfile */; };
+		C0E9E127179F082B005CCFBC /* RKNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9E126179F082B005CCFBC /* RKNewsItem.m */; };
+		C0E9E12A179F0F94005CCFBC /* RKNewsItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E9E129179F0F94005CCFBC /* RKNewsItemsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092AD9A6040F4D60862401A0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BCFC01F8166742ABB0F5CBD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E9E0FE179F0470005CCFBC /* RKHackerNewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKHackerNewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E9E101179F0470005CCFBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0E9E103179F0470005CCFBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0E9E105179F0470005CCFBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C0E9E109179F0470005CCFBC /* RKHackerNewsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKHackerNewsExample-Info.plist"; sourceTree = "<group>"; };
+		C0E9E109179F0470005CCFBC /* RKHackerNewsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RKHackerNewsExample-Info.plist"; path = "RKHackerNewsExample/RKHackerNewsExample-Info.plist"; sourceTree = "<group>"; };
 		C0E9E10B179F0470005CCFBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0E9E10D179F0470005CCFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0E9E10F179F0470005CCFBC /* RKHackerNewsExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKHackerNewsExample-Prefix.pch"; sourceTree = "<group>"; };
 		C0E9E110179F0470005CCFBC /* RKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAppDelegate.h; sourceTree = "<group>"; };
 		C0E9E111179F0470005CCFBC /* RKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKAppDelegate.m; sourceTree = "<group>"; };
-		C0E9E113179F0470005CCFBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C0E9E115179F0470005CCFBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C0E9E117179F0470005CCFBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C0E9E113179F0470005CCFBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RKHackerNewsExample/Default.png; sourceTree = "<group>"; };
+		C0E9E115179F0470005CCFBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RKHackerNewsExample/Default@2x.png"; sourceTree = "<group>"; };
+		C0E9E117179F0470005CCFBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RKHackerNewsExample/Default-568h@2x.png"; sourceTree = "<group>"; };
+		C0E9E11E179F0527005CCFBC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C0E9E125179F082B005CCFBC /* RKNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsItem.h; sourceTree = "<group>"; };
+		C0E9E126179F082B005CCFBC /* RKNewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsItem.m; sourceTree = "<group>"; };
+		C0E9E128179F0F94005CCFBC /* RKNewsItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsItemsViewController.h; sourceTree = "<group>"; };
+		C0E9E129179F0F94005CCFBC /* RKNewsItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsItemsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 				C0E9E102179F0470005CCFBC /* UIKit.framework in Frameworks */,
 				C0E9E104179F0470005CCFBC /* Foundation.framework in Frameworks */,
 				C0E9E106179F0470005CCFBC /* CoreGraphics.framework in Frameworks */,
+				5AD025353BB04F8FB19D0C49 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +63,13 @@
 		C0E9E0F5179F0470005CCFBC = {
 			isa = PBXGroup;
 			children = (
-				C0E9E107179F0470005CCFBC /* RKHackerNewsExample */,
+				C0E9E11E179F0527005CCFBC /* Podfile */,
+				C0E9E107179F0470005CCFBC /* Classes */,
+				C0E9E108179F0470005CCFBC /* Other Sources */,
+				C0E9E124179F079E005CCFBC /* Resources */,
 				C0E9E100179F0470005CCFBC /* Frameworks */,
 				C0E9E0FF179F0470005CCFBC /* Products */,
+				092AD9A6040F4D60862401A0 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,32 +87,45 @@
 				C0E9E101179F0470005CCFBC /* UIKit.framework */,
 				C0E9E103179F0470005CCFBC /* Foundation.framework */,
 				C0E9E105179F0470005CCFBC /* CoreGraphics.framework */,
+				BCFC01F8166742ABB0F5CBD3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0E9E107179F0470005CCFBC /* RKHackerNewsExample */ = {
+		C0E9E107179F0470005CCFBC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				C0E9E110179F0470005CCFBC /* RKAppDelegate.h */,
 				C0E9E111179F0470005CCFBC /* RKAppDelegate.m */,
-				C0E9E108179F0470005CCFBC /* Supporting Files */,
+				C0E9E125179F082B005CCFBC /* RKNewsItem.h */,
+				C0E9E126179F082B005CCFBC /* RKNewsItem.m */,
+				C0E9E128179F0F94005CCFBC /* RKNewsItemsViewController.h */,
+				C0E9E129179F0F94005CCFBC /* RKNewsItemsViewController.m */,
 			);
+			name = Classes;
 			path = RKHackerNewsExample;
 			sourceTree = "<group>";
 		};
-		C0E9E108179F0470005CCFBC /* Supporting Files */ = {
+		C0E9E108179F0470005CCFBC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C0E9E10D179F0470005CCFBC /* main.m */,
+				C0E9E10F179F0470005CCFBC /* RKHackerNewsExample-Prefix.pch */,
+			);
+			name = "Other Sources";
+			path = RKHackerNewsExample;
+			sourceTree = "<group>";
+		};
+		C0E9E124179F079E005CCFBC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				C0E9E109179F0470005CCFBC /* RKHackerNewsExample-Info.plist */,
 				C0E9E10A179F0470005CCFBC /* InfoPlist.strings */,
-				C0E9E10D179F0470005CCFBC /* main.m */,
-				C0E9E10F179F0470005CCFBC /* RKHackerNewsExample-Prefix.pch */,
 				C0E9E113179F0470005CCFBC /* Default.png */,
 				C0E9E115179F0470005CCFBC /* Default@2x.png */,
 				C0E9E117179F0470005CCFBC /* Default-568h@2x.png */,
 			);
-			name = "Supporting Files";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0E9E11B179F0470005CCFBC /* Build configuration list for PBXNativeTarget "RKHackerNewsExample" */;
 			buildPhases = (
+				D580E5BFE2464DC581BBD1DA /* Check Pods Manifest.lock */,
 				C0E9E0FA179F0470005CCFBC /* Sources */,
 				C0E9E0FB179F0470005CCFBC /* Frameworks */,
 				C0E9E0FC179F0470005CCFBC /* Resources */,
+				BDFB9E8448D646F3B8738E2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,10 +186,44 @@
 				C0E9E114179F0470005CCFBC /* Default.png in Resources */,
 				C0E9E116179F0470005CCFBC /* Default@2x.png in Resources */,
 				C0E9E118179F0470005CCFBC /* Default-568h@2x.png in Resources */,
+				C0E9E11F179F0527005CCFBC /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDFB9E8448D646F3B8738E2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D580E5BFE2464DC581BBD1DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0E9E0FA179F0470005CCFBC /* Sources */ = {
@@ -167,6 +232,8 @@
 			files = (
 				C0E9E10E179F0470005CCFBC /* main.m in Sources */,
 				C0E9E112179F0470005CCFBC /* RKAppDelegate.m in Sources */,
+				C0E9E127179F082B005CCFBC /* RKNewsItem.m in Sources */,
+				C0E9E12A179F0F94005CCFBC /* RKNewsItemsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +246,7 @@
 				C0E9E10B179F0470005CCFBC /* en */,
 			);
 			name = InfoPlist.strings;
+			path = RKHackerNewsExample;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -242,6 +310,7 @@
 		};
 		C0E9E11C179F0470005CCFBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092AD9A6040F4D60862401A0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RKHackerNewsExample/RKHackerNewsExample-Prefix.pch";
@@ -253,6 +322,7 @@
 		};
 		C0E9E11D179F0470005CCFBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092AD9A6040F4D60862401A0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RKHackerNewsExample/RKHackerNewsExample-Prefix.pch";
@@ -281,6 +351,7 @@
 				C0E9E11D179F0470005CCFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
