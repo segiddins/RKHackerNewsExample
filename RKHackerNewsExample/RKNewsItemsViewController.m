@@ -15,7 +15,7 @@
 // limitations under the License.
 
 #import "RKNewsItemsViewController.h"
-#import <RestKit/Network/RKObjectManager.h>
+#import <RestKit/RestKit.h>
 #import "RKNewsItem.h"
 
 @interface RKNewsItemsViewController ()
@@ -31,6 +31,8 @@
     [super viewDidLoad];
     UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh)];
     self.navigationItem.rightBarButtonItem = refreshItem;
+    self.refreshControl = [[UIRefreshControl alloc] initWithFrame:CGRectZero];
+    [self.refreshControl addTarget:self action:@selector(refreshControl) forControlEvents:UIControlEventValueChanged];
     [self refresh];
 }
 
@@ -38,9 +40,11 @@
 {
     [[RKObjectManager sharedManager] getObjectsAtPath:@"items/_search" parameters:@{@"filter[fields][type]" : @"submission", @"limit" : @100, @"sortby" : @"create_ts desc"} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         self.items = mappingResult.array;
+        [self.refreshControl endRefreshing];
         [self.tableView reloadData];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         NSLog(@">>> Error: %@", error);
+        [self.refreshControl endRefreshing];
     }];
 }
 

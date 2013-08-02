@@ -9,12 +9,7 @@
 #import "RKAppDelegate.h"
 #import "RKNewsItem.h"
 #import "RKNewsItemsViewController.h"
-#import <RestKit/ObjectMapping/RKObjectMapping.h>
-#import <RestKit/Network/RKObjectManager.h>
-#import <RestKit/Support/RKMIMETypes.h>
-#import <RestKit/Network/RKResponseDescriptor.h>
-#import <AFNetworking/AFNetworking.h>
-
+#import <RestKit/RestKit.h>
 @implementation RKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

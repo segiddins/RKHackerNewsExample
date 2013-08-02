@@ -38,7 +38,7 @@
 		C0E9E113179F0470005CCFBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RKHackerNewsExample/Default.png; sourceTree = "<group>"; };
 		C0E9E115179F0470005CCFBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RKHackerNewsExample/Default@2x.png"; sourceTree = "<group>"; };
 		C0E9E117179F0470005CCFBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RKHackerNewsExample/Default-568h@2x.png"; sourceTree = "<group>"; };
-		C0E9E11E179F0527005CCFBC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C0E9E11E179F0527005CCFBC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C0E9E125179F082B005CCFBC /* RKNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsItem.h; sourceTree = "<group>"; };
 		C0E9E126179F082B005CCFBC /* RKNewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNewsItem.m; sourceTree = "<group>"; };
 		C0E9E128179F0F94005CCFBC /* RKNewsItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNewsItemsViewController.h; sourceTree = "<group>"; };
